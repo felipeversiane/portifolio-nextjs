@@ -5,14 +5,14 @@ import { Menu } from "./Menu";
 
 export function Header (){
   return (
-    <header className="flex items-center w-full justify-between">
+    <header className="flex items-center w-full z-50 justify-between">
       <Link href='/'> 
           <Image src='/icons/logo-small.svg' height={30} width={30} alt="Site logo" />
       </Link>
-      <div className="hidden md:block">
+      <div className="hidden z-50 md:block">
         <Navbar />
       </div>
-      <div className="md:hidden">
+      <div className=" z-50 md:hidden">
         <Menu />
       </div>
     </header>
