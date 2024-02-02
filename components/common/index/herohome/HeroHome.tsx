@@ -11,7 +11,7 @@ export default function HeroHome (){
 
 
     return (
-        <div className="content flex items-end justify-start w-full h-fit mt-40">
+        <div className="content flex items-center justify-start w-full h-fit mt-40">
             <div className="flex items-start justify-center w-full gap-6 flex-col">
 
                 <h2 className="text-white font-extralight text-4xl">
@@ -58,26 +58,26 @@ export default function HeroHome (){
 
             </div>
             <div className="flex items-center w-1/3 max-w-1/3 justify-end">
-                <div className=' absolute z-0 top-64 right-8 h-96 w-96 bg-[#739B79] blur-3xl rounded-full opacity-75'></div>
+                <div className=' absolute z-0 top-60 right-[-40px] h-96 w-96 bg-[#739B79] blur-3xl rounded-full opacity-80'></div>
                     <Image
                         src='images/carbon-code.svg'
-                        className="z-50 absolute right-[-60px] top-64"
-                        height={200}
-                        width={600}
-                        style={{ maxWidth: 'none', maxHeight: 'none' }}
+                        className=" z-30 absolute right-[-50px] top-72"
+                        height={150}
+                        width={530}
+                        style={{ maxWidth: 'none', maxHeight: 'none' }} 
                         alt="Carbon Code Icon"
                     />      
                     <Image
                         src='images/carbon-code2.svg'
-                        className="z-20 absolute right-[-60px] top-32"
+                        className="z-20 absolute right-[-60px] top-36"
                         height={100}
-                        width={400}
+                        width={440}
                         style={{ maxWidth: 'none', maxHeight: 'none' }}
                         alt="Carbon Code Icon"
                     />
-                    <div className=' h-64 w-96 border border-solid border-opacity-50 rounded-xl z-10 absolute right-[-50px] shadow-2xl bg-[#232323] opacity-80 border-[#383737]'></div>
-                    <div className=' h-64 w-96 border border-solid border-opacity-50 rounded-xl z-10 top-28 right-[-150px] absolute shadow-2xl bg-[#232323] opacity-80 border-[#383737]'></div>
-                    <div className=' h-64 w-96 border border-solid border-opacity-50 rounded-xl z-10 top-52 right-10 absolute shadow-2xl bg-[#232323] opacity-80 border-[#383737]'></div>
+                    <div className=' h-64 w-96 border border-solid border-opacity-50 rounded-xl z-10 top-36 right-[-150px] absolute shadow-2xl bg-[#232323] opacity-80 border-[#383737]'></div>
+                    <div className=' h-96 w-96 border border-solid border-opacity-50 rounded-xl z-10 top-72 right-[-80px] absolute shadow-2xl bg-[#232323] opacity-80 border-[#383737]'></div>
+                    <div className=' h-64 w-96 border border-solid border-opacity-50 rounded-xl z-10 top-64 right-0 absolute shadow-2xl bg-[#232323] opacity-80 border-[#383737]'></div>
                 </div>
         </div>
     );

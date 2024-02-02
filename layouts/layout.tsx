@@ -23,7 +23,7 @@ export default function Layout({ children, title = 'Title' }: Props){
 
     <Header/>
     {children}
-    {/* <Footer/> */}
+    <Footer/>
   </>
 );
 };
