@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import Image from 'next/image'
 import {
   Popover,
@@ -34,28 +32,28 @@ export function Menu() {
               
         </SheetHeader>
         <div className="grid gap-4 py-4 mt-8">
-              <Link href="/" className="flex justify-start items-baseline  w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
-                <Image src='icons/house.svg' className="" height={22} width={22} alt="House Icon"/>
-                <p className="font-light text-2xl ml-3"> Home</p>
-              </Link>
+        <Link href="/aboutme" className="flex justify-start items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
+                  <Image src='icons/house.svg' className="" height={25} width={25} alt="House Icon"/>
+                  <p className="font-light text-2xl ml-3 mt-2">Home</p>
+                </Link>
               <div className="mt-4">
                 <p className="title font-light text-xl text-[#909090]">
                     Me 
                 </p>
                 <Link href="/aboutme" className="flex justify-start items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
-                  <Image src='icons/id-card.svg' className="" height={25} width={25} alt="House Icon"/>
+                  <Image src='icons/id-card.svg' className="" height={25} width={25} alt="Id-Card Icon"/>
                   <p className="font-light text-2xl ml-3 mt-2"> About me</p>
                 </Link>
                 <Link href="/projects" className="flex justify-start items-center mt-1  w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
-                  <Image src='icons/archive.svg' className="" height={25} width={25} alt="House Icon"/>
+                  <Image src='icons/archive.svg' className="" height={25} width={25} alt="Archive Icon"/>
                   <p className="font-light text-2xl ml-3 mt-2">Projects</p>
                 </Link>
                 <Link href="/stack" className="flex justify-start items-center mt-1  w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
-                  <Image src='icons/tools.svg' className="" height={25} width={25} alt="House Icon"/>
+                  <Image src='icons/tools.svg' className="" height={25} width={25} alt="Tools Icon"/>
                   <p className="font-light text-2xl ml-3 mt-2">Stack and Tools</p>
                 </Link>
                 <Link href="/notebook" className="flex justify-start items-center mt-1  w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
-                  <Image src='icons/notebook.svg' className="" height={25} width={25} alt="House Icon"/>
+                  <Image src='icons/notebook.svg' className="" height={25} width={25} alt="Notebook Icon"/>
                   <p className="font-light text-2xl ml-3 mt-2">Notebook</p>
                 </Link>
               </div>
@@ -65,45 +63,45 @@ export function Menu() {
                 </p>
                 <Link href="/linkedin" className="flex justify-between items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
                   <div className="flex ">
-                    <Image src='icons/social-linkedin.svg' className="" height={25} width={25} alt="House Icon"/>
+                    <Image src='icons/social-linkedin.svg' className="" height={25} width={25} alt="Linkedin Icon"/>
                     <p className="font-light text-2xl ml-3 mt-2">Linkedin</p>
                   </div>
-                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="House Icon"/>
+                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="Arrow-Up Icon"/>
                 </Link>
                 <Link href="/instagram" className="flex justify-between items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
                   <div className="flex ">
-                    <Image src='icons/social-instagram.svg' className="" height={25} width={25} alt="House Icon"/>
+                    <Image src='icons/social-instagram.svg' className="" height={25} width={25} alt="Instagram Icon"/>
                     <p className="font-light text-2xl ml-3 mt-2">Instagram</p>
                   </div>
-                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="House Icon"/>
+                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="Arrow-Up Icon"/>
                 </Link>
                 <Link href="/github" className="flex justify-between items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
                   <div className="flex ">
-                    <Image src='icons/social-github.svg' className="" height={25} width={25} alt="House Icon"/>
+                    <Image src='icons/social-github.svg' className="" height={25} width={25} alt="Github Icon"/>
                     <p className="font-light text-2xl ml-3 mt-2">Github</p>
                   </div>
-                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="House Icon"/>
+                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="Arrow-Up Icon"/>
                 </Link>
                 <Link href="/spotify" className="flex justify-between items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
                   <div className="flex ">
-                    <Image src='icons/social-spotify.svg' className="" height={25} width={25} alt="House Icon"/>
+                    <Image src='icons/social-spotify.svg' className="" height={25} width={25} alt="Spotify Icon"/>
                     <p className="font-light text-2xl ml-3 mt-2">Spotify</p>
                   </div>
-                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="House Icon"/>
+                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="Arrow-Up Icon"/>
                 </Link>
                 <Link href="/discord" className="flex justify-between items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
                   <div className="flex ">
-                    <Image src='icons/social-discord.svg' className="" height={25} width={25} alt="House Icon"/>
+                    <Image src='icons/social-discord.svg' className="" height={25} width={25} alt="Discord Icon"/>
                     <p className="font-light text-2xl ml-3 mt-2">Discord</p>
                   </div>
-                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="House Icon"/>
+                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="Arrow-Up Icon"/>
                 </Link>
                 <Link href="/whatsapp" className="flex justify-between items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
                   <div className="flex">
-                    <Image src='icons/social-whatsapp.svg' className="" height={25} width={25} alt="House Icon"/>
+                    <Image src='icons/social-whatsapp.svg' className="" height={25} width={25} alt="Whatsapp Icon"/>
                     <p className="font-light text-2xl ml-3 mt-2">Whatsapp</p>
                   </div>
-                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="House Icon"/>
+                  <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="Arrow-Up Icon"/>
                 </Link>
               </div>
         </div>

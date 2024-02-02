@@ -18,6 +18,7 @@ export default function Layout({ children, title = 'Title' }: Props){
       </title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="shortcut icon" href="/icons/logo-small-black.svg" type='image/x-icon' />
     </Head>
 
     <Header/>
