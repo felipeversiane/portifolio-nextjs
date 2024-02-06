@@ -11,7 +11,7 @@ export default function HeroHome (){
 
 
     return (
-        <div className="content flex items-center justify-start w-full h-fit mt-40 py-4 px-10">
+        <div className="content flex items-center justify-start w-full h-fit mt-32 py-4 px-10">
             <div className="flex items-start justify-center w-full gap-6 flex-col">
 
                 <h2 className="text-white font-extralight text-4xl">
