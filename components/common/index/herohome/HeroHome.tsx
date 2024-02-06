@@ -11,14 +11,14 @@ export default function HeroHome (){
 
 
     return (
-        <div className="content flex items-center justify-start w-full h-fit mt-40">
+        <div className="content flex items-center justify-start w-full h-fit mt-40 py-4 px-10">
             <div className="flex items-start justify-center w-full gap-6 flex-col">
 
                 <h2 className="text-white font-extralight text-4xl">
                     Hi, i'm Versiane
                 </h2>
 
-                <h1 className='text-white text-7xl font-semibold'>
+                <h1 className='text-white text-7xl  font-semibold'>
                    <Typewriter
                         options={{
                             strings: text,

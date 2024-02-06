@@ -3,7 +3,6 @@
 
 body{
     font-family: "League Spartan";
-    padding: 20px 60px !important;
     background-color: #0f0f0f !important;
     scrollbar-width: thin;  
     scrollbar-color: #272727 #3a3a3a;
@@ -32,3 +31,4 @@ html {
         padding: 20px !important;
     }
 }
+

@@ -52,10 +52,10 @@ export function Menu() {
                   <Image src='icons/tools.svg' className="" height={25} width={25} alt="Tools Icon"/>
                   <p className="font-light text-2xl ml-3 mt-2">Stack and Tools</p>
                 </Link>
-                <Link href="/notebook" className="flex justify-start items-center mt-1  w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
+                {/* <Link href="/notebook" className="flex justify-start items-center mt-1  w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
                   <Image src='icons/notebook.svg' className="" height={25} width={25} alt="Notebook Icon"/>
                   <p className="font-light text-2xl ml-3 mt-2">Notebook</p>
-                </Link>
+                </Link> */}
               </div>
               <div className="mt-4">
                 <p className="title font-light text-xl text-[#909090]">

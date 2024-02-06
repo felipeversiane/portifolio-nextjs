@@ -5,7 +5,7 @@ import { Menu } from "./Menu";
 
 export function Header (){
   return (
-    <header className="flex items-center w-full z-50 justify-between">
+    <header className="flex items-center w-full z-50 justify-between py-4 px-10">
       <Link href='/'> 
           <Image src='/icons/logo-small.svg' height={30} width={30} alt="Site logo" />
       </Link>

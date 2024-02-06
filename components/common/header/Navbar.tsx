@@ -34,11 +34,6 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "All the languages ​​I know along with the tools and apps I use.",
   },
-  {
-    title: "Notebook",
-    href: "/notebook",
-    description: "Articles and posts about the incredible world of programming.",
-  },
 ]
 
 export function Navbar() {
