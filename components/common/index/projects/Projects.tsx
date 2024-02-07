@@ -10,16 +10,16 @@ export default function Projects(){
                 </h2>
 
                 <div className="flex items-center justify-between w-full">
-                    <h1 className="text-white text-6xl font-semibold">
+                    <h1 className="text-white text-5xl font-semibold">
                         A few selected projects”
                     </h1>
                     <div className="flex h-fit w-fit items-end justify-end">
-                        <Link href="/projects" className="flex items-start justify-center h-fit group">
-                            <p className="text-2xl font-light">
+                        <Link href="/projects" className="flex items-baseline justify-center h-fit group">
+                            <p className="text-xl font-light">
                                 View all
                             </p>
                             <span className="ml-2 mt-0.5 transform group-hover:translate-x-[5px] transition-all duration-300">
-                                <Image src="/icons/arrow-right.svg" height={12} width={12} alt="Arrow Right Icon"/>
+                                <Image src="/icons/arrow-right.svg" height={8} width={8} alt="Arrow Right Icon"/>
                             </span>
                         </Link>
                     </div>

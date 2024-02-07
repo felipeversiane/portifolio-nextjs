@@ -14,8 +14,8 @@ export default function HeroHome (){
         <div className="content flex items-center justify-start w-full h-fit mt-32 py-4 px-10">
             <div className="flex items-start justify-center w-full gap-6 flex-col">
 
-                <h2 className="text-white font-extralight text-4xl">
-                    Hi, i'm Versiane
+                <h2 className="text-white font-extralight text-2xl">
+                    Explore, Transform & Shine
                 </h2>
 
                 <h1 className='text-white text-7xl  font-semibold'>
@@ -44,15 +44,15 @@ export default function HeroHome (){
                 
                 <div className='buttons flex items-center justify-start mt-2 w-full'>
                     <Link href="/contact" className="flex items-baseline mr-6 overflow-hidden transform hover:scale-105 justify-center rounded-lg bg-white px-4 py-2 hover:bg-[#f1f1f1] transition-all duration-300 ">
-                        <span className="font-medium text-xl mr-2  bg-inherit text-black">
+                        <span className="font-medium text-lg mr-2  bg-inherit text-black">
                             GET IN TOUCH
                         </span>
                     </Link>
                     <Link href="/contact" className="flex items-baseline  overflow-hidden transform hover:scale-105 justify-center rounded-lg bg-white px-4 py-2 hover:bg-[#f1f1f1] transition-all duration-300 ">
-                        <span className="font-medium text-xl mr-2  bg-inherit text-black">
+                        <span className="font-medium text-lg mr-2  bg-inherit text-black">
                             DOWNLOAD CV
                         </span>
-                        <Image src='icons/download.svg' className=" bg-inherit transition-transform duration-300" height={17} width={17} alt="Download Icon"/>
+                        <Image src='icons/download.svg' className=" bg-inherit transition-transform duration-300" height={15} width={15} alt="Download Icon"/>
                     </Link> 
                 </div>
 

@@ -7,7 +7,7 @@ interface ProjectCardProps {
   title: string;
   src: string;
   description: string;
-  stack: string[];
+  stack: { src: string; name: string }[],
   github: string,
   deploy:string,
 }
@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <h1 className="font-medium text-3xl">
               {title}
             </h1>
-            <p className="text-[#989898] line-clamp-[8] pr-12 font-extralight text-md w-[550px]">
+            <p className="text-[#989898] line-clamp-[7] pr-12 font-extralight text-lg w-[550px]">
               {description}
             </p>
           </div>

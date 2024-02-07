@@ -13,10 +13,10 @@ export function ContactFull(){
             If you have any projects in mind, feel free to send me a message.
         </p>
         <Link href="/contact" className="flex mb-6 items-baseline  overflow-hidden group justify-center rounded-lg bg-white px-4 py-2 hover:bg-[#f1f1f1] transition-all duration-300 ">
-            <span className="font-medium text-xl mr-2  bg-inherit text-black">
+            <span className="font-medium text-lg mr-2  bg-inherit text-black">
                 TALK TO ME
             </span>
-            <Image src='icons/arrownarrow-right.svg' className=" bg-inherit transform group-hover:translate-x-[5px] transition-transform duration-300" height={17} width={17} alt="Paper Plane Icon"/>
+            <Image src='icons/arrownarrow-right.svg' className=" bg-inherit transform group-hover:translate-x-[5px] transition-transform duration-300" height={15} width={15} alt="Paper Plane Icon"/>
         </Link>
     </div>
     <SocialStack/>

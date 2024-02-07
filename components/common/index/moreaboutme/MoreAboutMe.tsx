@@ -6,7 +6,7 @@ export default function MoreAboutMe(){
             <h2 className="text-white text-2xl font-light"> 
                 MORE ABOUT ME
             </h2>
-            <h1 className="text-white text-6xl font-semibold">
+            <h1 className="text-white text-5xl font-semibold">
                 My life in a few clicks"
             </h1>
             <SectionsGrid/>
