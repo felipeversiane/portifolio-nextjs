@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Projects(){
     return (
-            <div className=" z-30 flex items-start bg-[#171717] px-10  bg-opacity-50 justify-center w-full py-12 mt-40 flex-col gap-4">
+            <div className=" z-30 flex items-start bg-[#171717]  px-10  bg-opacity-50 justify-center h-fit w-full py-12 pb-24 mt-40 flex-col gap-4">
                 <h2 className="text-white text-2xl font-light"> 
                     CHECK IT OUT
                 </h2>

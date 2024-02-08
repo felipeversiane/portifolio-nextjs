@@ -1,3 +1,5 @@
+'use client'
+
 import * as React from "react"
 import {
   Carousel,
@@ -7,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import ProjectCard from "./ProjectCard";
+import { type CarouselApi } from "@/components/ui/carousel"
 
 
 const projects: { 
@@ -58,9 +61,27 @@ const projects: {
 
 
 export function ProjectsCarousel() {
+
+  const [api, setApi] = React.useState<CarouselApi>()
+  const [current, setCurrent] = React.useState(0)
+  const [count, setCount] = React.useState(0)
+ 
+  React.useEffect(() => {
+    if (!api) {
+      return
+    }
+ 
+    setCount(api.scrollSnapList().length)
+    setCurrent(api.selectedScrollSnap() + 1)
+ 
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [api])
+ 
   return (
     <div className="px-12 w-full h-96 mt-12 z-10"> 
-      <Carousel className="w-full max-w-full max-h-full flex h-full"
+      <Carousel setApi={setApi} className="w-full max-w-full max-h-full flex h-full"
           opts={{
               align: "start",
               loop: true,
@@ -83,6 +104,9 @@ export function ProjectsCarousel() {
         <CarouselPrevious className=""/>
         <CarouselNext className=""/>
       </Carousel>
+      <div className="py-8 flex w-full h-fit items-center justify-center text-center font-light text-xl text-muted-foreground">
+        Project {current} of {count}
+      </div>
     </div>
   )
 }

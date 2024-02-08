@@ -1,27 +1,26 @@
 'use client'
-
 import React from 'react'
 import Typewriter from 'typewriter-effect'; 
 import Image from 'next/image'
 import Link from 'next/link';
+import { Locale } from '@/config/i18n.config';
+import { getDictionaryUseClient } from '@/dictionaries/default-dictionary-use-client';
 
-export default function HeroHome (){
-    const text:string[] = ['Software Engineer','Back-end Developer','Front-end Developer'];
-    const uppercaseText:string[] = text.map((item) => item.toUpperCase());
-
+export default function HeroHome ({ params }: { params: { lang: Locale } }){
+    const { dictionary } = getDictionaryUseClient(params.lang);
 
     return (
         <div className="content flex items-center justify-start w-full h-fit mt-32 py-4 px-10">
             <div className="flex items-start justify-center w-full gap-6 flex-col">
 
                 <h2 className="text-white font-extralight text-2xl">
-                    Explore, Transform & Shine
+                    {dictionary.herohome.subtitle}
                 </h2>
 
                 <h1 className='text-white text-7xl  font-semibold'>
                    <Typewriter
                         options={{
-                            strings: text,
+                            strings: dictionary.herohome.title,
                             autoStart: true,
                             loop: true,
                             delay:100,
@@ -30,27 +29,26 @@ export default function HeroHome (){
                 </h1>
 
                 <p className=' w-3/5 font-light text-[#989898] text-lg'>
-                    Focused on crafting clean & user‑friendly experiences, I am passionate about building high‑quality websites.
+                    {dictionary.herohome.description}
                 </p>
 
                 <h3 className="relative flex items-center pl-5 font-light text-lg">
-                    <span className='ml-1'>Coding and currently open to work. </span>
+                    <span className='ml-1'>{dictionary.herohome.is_online}</span>
                     <span className="absolute left-0 top-3 flex h-3 w-3 -translate-y-1/2 pl-1">
                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full pl-1 opacity-75 bg-[#169723]"></span>
                         <span className="relative inline-flex h-3 w-3 rounded-full pl-3 bg-[#169723]"></span>
                     </span>
                 </h3>
                 
-                
                 <div className='buttons flex items-center justify-start mt-2 w-full'>
                     <Link href="/contact" className="flex items-baseline mr-6 overflow-hidden transform hover:scale-105 justify-center rounded-lg bg-white px-4 py-2 hover:bg-[#f1f1f1] transition-all duration-300 ">
                         <span className="font-medium text-lg mr-2  bg-inherit text-black">
-                            GET IN TOUCH
+                            {dictionary.herohome.get_in_touch}
                         </span>
                     </Link>
                     <Link href="/contact" className="flex items-baseline  overflow-hidden transform hover:scale-105 justify-center rounded-lg bg-white px-4 py-2 hover:bg-[#f1f1f1] transition-all duration-300 ">
                         <span className="font-medium text-lg mr-2  bg-inherit text-black">
-                            DOWNLOAD CV
+                            {dictionary.herohome.download_cv}
                         </span>
                         <Image src='icons/download.svg' className=" bg-inherit transition-transform duration-300" height={15} width={15} alt="Download Icon"/>
                     </Link> 
