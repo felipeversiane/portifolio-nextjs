@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../cards/ProjectCard";
 import { type CarouselApi } from "@/components/ui/carousel"
 
 

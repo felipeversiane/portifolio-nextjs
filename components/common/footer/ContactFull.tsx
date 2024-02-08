@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from 'next/image'
-import SocialStack from "./SocialStack";
+import SocialStack from "../stacks/SocialStack";
 
 export function ContactFull(){
   return (

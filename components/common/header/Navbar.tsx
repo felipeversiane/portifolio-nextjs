@@ -14,6 +14,7 @@ import {
   navigationMenuNoneStyle,
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
+import { Lang } from "./Lang"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -64,11 +65,7 @@ export function Navbar() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/contact" className=" bg-inherit" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuNoneStyle()}>
-              <Image src='icons/flag-br.svg' className=" bg-inherit" height={30}  width={30} alt="Brazil Flag"/>
-            </NavigationMenuLink>
-          </Link>
+          <Lang/>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

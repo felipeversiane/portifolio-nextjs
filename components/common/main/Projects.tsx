@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {ProjectsCarousel} from "./ProjectsCarousel"
+import {ProjectsCarousel} from "../carrousel/ProjectsCarousel"
 import Image from 'next/image'
 
 export default function Projects(){

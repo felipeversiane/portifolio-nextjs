@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import StackBar from "./StackBar";
+import StackBar from "../stacks/StackBar";
 
 interface ProjectCardProps {
   title: string;

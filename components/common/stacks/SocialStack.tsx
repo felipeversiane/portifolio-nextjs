@@ -1,4 +1,4 @@
-import SocialButton from "./SocialButton";
+import SocialButton from "../buttons/SocialButton";
 
 const buttons: { src: string; alt: string; height: number;width: number;href:string; }[] = [
     {

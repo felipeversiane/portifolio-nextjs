@@ -1,8 +1,7 @@
-import HeroHome from '../../components/common/index/herohome/HeroHome'
-import Projects from '@/components/common/index/projects/Projects';
-import MoreAboutMe from '@/components/common/index/moreaboutme/MoreAboutMe';
+import HeroHome from '../../components/common/main/HeroHome'
+import Projects from '@/components/common/main/Projects';
+import MoreAboutMe from '@/components/common/main/MoreAboutMe';
 import { Locale } from '@/config/i18n.config';
-
 
 
 export default function Index({ params }: { params: { lang: Locale } }){
@@ -10,7 +9,7 @@ export default function Index({ params }: { params: { lang: Locale } }){
     <div>
       <HeroHome params={params}/>
       <Projects />
-      <MoreAboutMe />
+      <MoreAboutMe params={params} />
     </div>
   );
 };
