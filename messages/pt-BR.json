@@ -1,0 +1,110 @@
+{
+    "header": {
+        "mid-side":{
+            "aboutme":{
+                "title": "Sobre mim",
+                "href": "/aboutme"
+              },
+            "projects":{
+                "title": "Projetos",
+                "href": "/projects"
+              },
+            "tools":{
+                "title": "Ferramentas",
+                "href": "/tools"
+              },
+            "contact":{
+                "title": "Contato",
+                "href": "/contact"
+              }
+        },
+        "right-side":{
+            "translate":{
+                "english":"Inglês",
+                "portuguese":"Português"
+            }
+        },
+        "menu":{
+            "me":"Eu",
+            "social":"Social",
+            "home":"Inicio",
+            "about_me":{
+                "projects":{
+                    "title":"Projetos",
+                    "href":"/projects",
+                    "src":"/icons/archive.svg"
+                },
+                "aboutme":{ 
+                    "title":"Sobre mim",
+                    "href":"/aboutme",
+                    "src":"/icons/id-card.svg"
+                },
+                "tools":{
+                    "title":"Ferramentas",
+                    "href":"/tools",
+                    "src":"/icons/tools.svg"
+                }
+                
+            },
+            "config":{
+                "languages":"Linguagem",
+                "portuguese":"Português",
+                "english":"Inglês"
+            }
+        }
+    },
+    "footer": {
+        "title": "Vamos trabalhar juntos?",
+        "subtitle": "Se você tem algum projeto em mente, sinta-se à vontade para me enviar uma mensagem.",
+        "talk_to_me": "FALE COMIGO",
+        "copright": "©2024 - Felipe Fernandes Versiane. Todos os direitos reservados.",
+        "made_by": {
+            "madeby":"Feito com",
+            "nextjs":"Next.js",
+            "and":"e",
+            "shadcn":"Shadcn/UI"
+        }
+    },
+    "index": {
+        "herohome": {
+            "subtitle": "Explore, Transforme & Brilhe",
+            "title_first": "Eng. de Software", 
+            "title_second":"Dev. Back-end", 
+            "title_thirth":"Dev. Front-end",
+            "description": "Focado em criar experiências limpas e amigáveis ao usuário, sou apaixonado por construir sites de alta qualidade.",
+            "is_online": "Codificando e atualmente aberto a oportunidades de trabalho.",
+            "get_in_touch": "ENTRAR EM CONTATO",
+            "download_cv": "BAIXAR CV"
+        },
+        "projects": {
+            "subtitle":"DÊ UMA OLHADA",
+            "title":"Meus principais projetos\"",
+            "viewall":"Veja todos",
+            "whichproject":"Projeto",
+            "of":"de"
+
+        },
+        "more_about_me": {
+            "subtitle": "MAIS SOBRE MIM",
+            "title": "Minha vida em poucos cliques\"",
+            "sections": {
+                "aboutme":{
+                    "title": "Sobre mim",
+                    "src": "/icons/id-card.svg",
+                    "href": "/aboutme"
+                },
+                "stackandtools":{
+                    "title": "Tecnologias e Ferramentas",
+                    "src": "/icons/tools.svg",
+                    "href": "/tools"
+                },
+                "projects":{
+                    "title": "Projetos",
+                    "src": "/icons/archive.svg",
+                    "href": "/projects"
+                }
+            }
+            
+        }
+    }
+}

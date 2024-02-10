@@ -1,0 +1,109 @@
+{
+    "header": {
+        "mid-side":{
+            "aboutme":{
+                "title": "About me",
+                "href": "/aboutme"
+              },
+            "projects":{
+                "title": "Projects",
+                "href": "/projects"
+              },
+            "tools":{
+                "title": "Stack and Tools",
+                "href": "/tools"
+              },
+            "contact":{
+                "title": "Contact",
+                "href": "/contact"
+              }
+        },
+        "right-side":{
+            "translate":{
+                "english":"English",
+                "portuguese":"Portuguese"
+            }
+        },
+        "menu":{
+            "me":"Me",
+            "social":"Social",
+            "home":"Home",
+            "about_me":{
+                "projects":{
+                    "title":"Projects",
+                    "href":"/projects",
+                    "src":"/icons/archive.svg"
+                },
+                "aboutme":{
+                    "title":"About me",
+                    "href":"/aboutme",
+                    "src":"/icons/id-card.svg"
+                },
+                "tools":{
+                    "title":"Stack and Tools",
+                    "href":"/tools",
+                    "src":"/icons/tools.svg"
+                }
+                
+            },
+            "config":{
+                "languages":"Languages",
+                "portuguese":"Portuguese",
+                "english":"English"
+            }
+        }
+    },
+    "footer": {
+        "title": "Let's work together ?",
+        "subtitle": "If you have any projects in mind, feel free to send me a message.",
+        "talk_to_me": "TALK TO ME",
+        "copright": "© 2024 - Felipe Fernandes Versiane. All rights reserved.",
+        "made_by": {
+            "madeby":"Made by",
+            "nextjs":"Next.js",
+            "and":"and",
+            "shadcn":"Shadcn/UI"
+        }
+    },
+    "index": {
+        "herohome": {
+            "subtitle": "Explore, Transform & Shine",
+            "title_first": "Software Engineer", 
+            "title_second":"Back-end Developer", 
+            "title_thirth":"Front-end Developer",
+            "description": " Focused on crafting clean & user‑friendly experiences, I am passionate about building high‑quality websites.",
+            "is_online": "Coding and currently open to work.",
+            "get_in_touch": "GET IN TOUCH",
+            "download_cv": "DOWNLOAD CV"
+        },
+        "projects": {
+            "subtitle":"CHECK IT OUT",
+            "title":"A few selected projets\"",
+            "viewall":"View all",
+            "whichproject":"Project",
+            "of":"of"
+
+        },
+        "more_about_me": {
+            "subtitle": "MORE ABOUT ME",
+            "title": "My life in a few clicks\"",
+            "sections": {
+                "aboutme":{
+                    "title": "About me",
+                    "src": "/icons/id-card.svg",
+                    "href": "/aboutme"
+                },
+                "stackandtools":{
+                    "title": "Stack and Tools",
+                    "src": "/icons/tools.svg",
+                    "href": "/tools"
+                },
+                "projects":{
+                    "title": "Projects",
+                    "src": "/icons/archive.svg",
+                    "href": "/projects"
+                }
+            }
+        }
+    }
+}

@@ -30,13 +30,6 @@ const buttons: { src: string; alt: string; height: number;width: number;href:str
         href:"",
     },
     {
-        src: "/icons/social-discord.svg",
-        alt: "Discord Icon",
-        height: 25,
-        width: 30,
-        href:"",
-    },
-    {
         src: "/icons/social-whatsapp.svg",
         alt: "Whatsapp Icon",
         height: 25,

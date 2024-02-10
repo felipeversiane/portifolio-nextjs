@@ -1,7 +1,9 @@
+
 import Link from "next/link";
 import Image from 'next/image'
 import { Navbar } from "./Navbar";
-import { Menu } from "./Menu";
+import { Menu } from "../mobile/Menu";
+import { Lang } from "./Lang";
 
 export function Header (){
   return (
@@ -10,10 +12,13 @@ export function Header (){
           <Image src='/icons/logo-small.svg' height={30} width={30} alt="Site logo" />
       </Link>
       <div className="hidden z-50 md:block">
-        <Navbar />
+        <Navbar/>
+      </div>
+      <div className="hidden z-50 md:block">
+        <Menu/>
       </div>
       <div className=" z-50 md:hidden">
-        <Menu />
+        <Menu/>
       </div>
     </header>
   );

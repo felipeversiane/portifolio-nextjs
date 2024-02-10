@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel"
 import ProjectCard from "../cards/ProjectCard";
 import { type CarouselApi } from "@/components/ui/carousel"
+import { useTranslations } from "next-intl";
 
 
 const projects: { 
@@ -78,6 +79,8 @@ export function ProjectsCarousel() {
       setCurrent(api.selectedScrollSnap() + 1)
     })
   }, [api])
+
+  const t = useTranslations('index.projects');
  
   return (
     <div className="px-12 w-full h-96 mt-12 z-10"> 
@@ -105,7 +108,7 @@ export function ProjectsCarousel() {
         <CarouselNext className=""/>
       </Carousel>
       <div className="py-8 flex w-full h-fit items-center justify-center text-center font-light text-xl text-muted-foreground">
-        Project {current} of {count}
+        {t('whichproject')} {current} {t('of')} {count}
       </div>
     </div>
   )

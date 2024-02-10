@@ -1,15 +1,14 @@
+'use client'
 import HeroHome from '../../components/common/main/HeroHome'
 import Projects from '@/components/common/main/Projects';
 import MoreAboutMe from '@/components/common/main/MoreAboutMe';
-import { Locale } from '@/config/i18n.config';
 
-
-export default function Index({ params }: { params: { lang: Locale } }){
+export default function Index(){
   return (
     <div>
-      <HeroHome params={params}/>
+      <HeroHome/>
       <Projects />
-      <MoreAboutMe params={params} />
+      <MoreAboutMe/>
     </div>
   );
 };

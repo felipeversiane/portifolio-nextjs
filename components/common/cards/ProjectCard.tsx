@@ -12,17 +12,16 @@ interface ProjectCardProps {
   deploy:string,
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
+export default function ProjectCard({
   title,
   src,
   description,
   stack,
   github,
-  deploy
-}) => {
+  deploy,
+}: ProjectCardProps) {
   return (
-      <div className="flex shadown-2xl w-full justify-between flex-col items-start p-8 h-96 max-h-96 rounded-xl bg-[#232323] bg-opacity-50 border border-solid border-opacity-50 border-[#383737]">
-        
+      <div className="flex shadown-2xl w-full justify-between flex-col items-start p-8 h-96 max-h-96 rounded-xl bg-[#232323] bg-opacity-50 border border-solid border-opacity-50 border-[#383737]">        
         <div className="main flex items-center justify-between">
           <div className="flex w-1/2 h-full items-start justify-start flex-col gap-4">
             <h1 className="font-medium text-3xl">
@@ -62,4 +61,4 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     </div>
   );
 };
-export default ProjectCard;
+

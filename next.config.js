@@ -1,3 +1,5 @@
-module.exports = {
-    output: 'standalone',
-  }
+const withNextIntl = require('next-intl/plugin')();
+
+module.exports = withNextIntl({
+  output:'standalone',
+})

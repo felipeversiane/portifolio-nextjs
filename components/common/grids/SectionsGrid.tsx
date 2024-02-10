@@ -1,18 +1,19 @@
 import SectionCard from "../cards/SectionCard";
 import React from "react";
-import { Locale } from '@/config/i18n.config';
-import { getDictionaryUseClient } from '@/dictionaries/default-dictionary-use-client';
+import { useTranslations } from "next-intl";
 
-  export default function SectionsGrid({ params }: { params: { lang: Locale } }){
-    const { dictionary } = getDictionaryUseClient(params.lang);
+  export default function SectionsGrid(){
+    const t = useTranslations('index.more_about_me');
+    const keys = ['aboutme','stackandtools','projects'] as const;
+    
     return (
     <div className="flex justify-between items-center w-full mt-14">
-        {dictionary.index.more_about_me.sections.map((section, index) => (
+        {keys.map((key,index) => (
         <SectionCard
           key={index}
-          title={section.title}
-          src={section.src}
-          href={section.href}
+          title={t(`sections.${key}.title`)}
+          src={t(`sections.${key}.src`)}
+          href={t(`sections.${key}.href`)}
         />
       ))}
     </div>
