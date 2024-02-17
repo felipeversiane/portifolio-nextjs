@@ -15,27 +15,27 @@ export function Menu() {
   const social: {title:string,src:string,href:string}[] = [
     {
       title:"Linkedin",
-      src:"icons/social-linkedin.svg",
+      src:"icons/social/social-linkedin.svg",
       href:"https://www.linkedin.com/in/felipeversiane/",
     },
     {
       title:"Instagram",
-      src:"icons/social-instagram.svg",
+      src:"icons/social/social-instagram.svg",
       href:"https://www.instagram.com/felipeffv_/",
     },
     {
       title:"Github",
-      src:"icons/social-github.svg",
+      src:"icons/social/social-github.svg",
       href:"https://github.com/felipeversiane",
     },
     {
       title:"Spotify",
-      src:"icons/social-spotify.svg",
+      src:"icons/social/social-spotify.svg",
       href:"https://open.spotify.com/user/iamlipe?si=1ca828be84d24316",
     },
     {
       title:"Whatsapp",
-      src:"icons/social-whatsapp.svg",
+      src:"icons/social/social-whatsapp.svg",
       href:"https://w.app/oWNQTn",
     },
   ]
@@ -47,7 +47,7 @@ export function Menu() {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="ghost">
-          <Image src='icons/menu-burguer.svg' height={20} width={20} alt="Menu Icon"/>
+          <Image src='icons/sheet/menu-burguer.svg' height={20} width={20} alt="Menu Icon"/>
         </Button>
       </SheetTrigger>
       <SheetContent >
@@ -55,19 +55,19 @@ export function Menu() {
               
         </SheetHeader>
         <div className="grid gap-4 py-4 mt-8">
-              <Link href="/" className="flex justify-start items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
-                        <Image src='icons/house.svg' className="" height={25} width={25} alt="House Icon"/>
-                        <p className="font-light text-2xl ml-3 mt-2">{t('home')}</p>
+              <Link href="/" className="flex justify-start items-center mt-1 w-full px-6 py-1 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
+                        <Image src='icons/sheet/house.svg' className="" height={20} width={20} alt="House Icon"/>
+                        <p className="font-light text-xl ml-3 mt-2">{t('home')}</p>
               </Link>
               <div className="mt-4">
                 <p className="title font-light text-xl text-[#909090]">
                     {t('me')} 
                 </p>
-                {me.map((item)=>{
+                {me.map((item,index)=>{
                   return (
-                    <Link href={t(`about_me.${item}.href`)} className="flex justify-start items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
-                      <Image src={t(`about_me.${item}.src`)} className="" height={25} width={25} alt="Icon"/>
-                      <p className="font-light text-2xl ml-3 mt-2"> {t(`about_me.${item}.title`)}</p>
+                    <Link key={index} href={t(`about_me.${item}.href`)} className="flex justify-start items-center mt-1 w-full px-6 py-1 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
+                      <Image src={t(`about_me.${item}.src`)} className="" height={20} width={20} alt="Icon"/>
+                      <p className="font-light text-xl ml-3 mt-2"> {t(`about_me.${item}.title`)}</p>
                     </Link>
                   )
                 })}
@@ -76,14 +76,14 @@ export function Menu() {
                 <p className="title font-light text-xl text-[#909090]">
                     {t('social')} 
                 </p>
-                {social.map((item)=> {
+                {social.map((item,index)=> {
                   return (
-                    <Link href={item.href}className="flex justify-between items-center mt-1 w-full px-6 py-2 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
+                    <Link key={index} href={item.href}className="flex justify-between items-center mt-1 w-full px-6 py-1 hover:bg-[#191919] transition-all duration-300 active:bg-[#121212]  rounded-lg">
                       <div className="flex ">
-                        <Image src={item.src} className="" height={25} width={25} alt="Icon"/>
-                        <p className="font-light text-2xl ml-3 mt-2">{item.title}</p>
+                        <Image src={item.src} className="" height={20} width={20} alt="Icon"/>
+                        <p className="font-light text-xl ml-3 mt-2">{item.title}</p>
                       </div>
-                      <Image src='icons/arrow-up-right.svg' className="" height={15} width={15} alt="Arrow-Up Icon"/>
+                      <Image src='icons/arrows/arrow-up-right.svg' className="" height={15} width={15} alt="Arrow-Up Icon"/>
                     </Link>
                   )
                 })}

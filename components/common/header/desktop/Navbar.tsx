@@ -19,9 +19,9 @@ export function Navbar() {
   return (
   <NavigationMenu>
       <NavigationMenuList>
-      {components.map((item)=>{
+      {components.map((item,index)=>{
         return (
-          <NavigationMenuItem>
+          <NavigationMenuItem key={index}>
             <Link href={t(`${item}.href`)} legacyBehavior passHref>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 {t(`${item}.title`)}

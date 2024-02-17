@@ -32,17 +32,17 @@
                 "projects":{
                     "title":"Projects",
                     "href":"/projects",
-                    "src":"/icons/archive.svg"
+                    "src":"/icons/sheet/archive.svg"
                 },
                 "aboutme":{
                     "title":"About me",
                     "href":"/aboutme",
-                    "src":"/icons/id-card.svg"
+                    "src":"/icons/sheet/id-card.svg"
                 },
                 "tools":{
                     "title":"Stack and Tools",
                     "href":"/tools",
-                    "src":"/icons/tools.svg"
+                    "src":"/icons/sheet/tools.svg"
                 }
                 
             },
@@ -90,17 +90,17 @@
             "sections": {
                 "aboutme":{
                     "title": "About me",
-                    "src": "/icons/id-card.svg",
+                    "src": "/icons/sheet/id-card.svg",
                     "href": "/aboutme"
                 },
                 "stackandtools":{
                     "title": "Stack and Tools",
-                    "src": "/icons/tools.svg",
+                    "src": "/icons/sheet/tools.svg",
                     "href": "/tools"
                 },
                 "projects":{
                     "title": "Projects",
-                    "src": "/icons/archive.svg",
+                    "src": "/icons/sheet/archive.svg",
                     "href": "/projects"
                 }
             }

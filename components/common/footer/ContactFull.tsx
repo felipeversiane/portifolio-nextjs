@@ -18,7 +18,7 @@ export function ContactFull(){
             <span className="font-medium text-lg mr-2  bg-inherit text-black">
                 {t('talk_to_me')}
             </span>
-            <Image src='icons/arrownarrow-right.svg' className=" bg-inherit transform group-hover:translate-x-[5px] transition-transform duration-300" height={15} width={15} alt="Paper Plane Icon"/>
+            <Image src='/icons/arrows/arrownarrow-right.svg' className=" bg-inherit transform group-hover:translate-x-[5px] transition-transform duration-300" height={15} width={15} alt="Arrow Icon"/>
         </Link>
     </div>
     <SocialStack/>

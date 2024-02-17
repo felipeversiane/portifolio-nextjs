@@ -32,17 +32,17 @@
                 "projects":{
                     "title":"Projetos",
                     "href":"/projects",
-                    "src":"/icons/archive.svg"
+                    "src":"/icons/sheet/archive.svg"
                 },
                 "aboutme":{ 
                     "title":"Sobre mim",
                     "href":"/aboutme",
-                    "src":"/icons/id-card.svg"
+                    "src":"/icons/sheet/id-card.svg"
                 },
                 "tools":{
                     "title":"Ferramentas",
                     "href":"/tools",
-                    "src":"/icons/tools.svg"
+                    "src":"/icons/sheet/tools.svg"
                 }
                 
             },
@@ -90,17 +90,17 @@
             "sections": {
                 "aboutme":{
                     "title": "Sobre mim",
-                    "src": "/icons/id-card.svg",
+                    "src": "/icons/sheet/id-card.svg",
                     "href": "/aboutme"
                 },
                 "stackandtools":{
                     "title": "Tecnologias e Ferramentas",
-                    "src": "/icons/tools.svg",
+                    "src": "/icons/sheet/tools.svg",
                     "href": "/tools"
                 },
                 "projects":{
                     "title": "Projetos",
-                    "src": "/icons/archive.svg",
+                    "src": "/icons/sheet/archive.svg",
                     "href": "/projects"
                 }
             }

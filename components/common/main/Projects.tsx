@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import {ProjectsCarousel} from "../carrousel/ProjectsCarousel"
 import Image from 'next/image'
@@ -21,7 +23,7 @@ export default function Projects(){
                                 {t("viewall")}
                             </p>
                             <span className="ml-2 mt-0.5 transform group-hover:translate-x-[5px] transition-all duration-300">
-                                <Image src="/icons/arrow-right.svg" height={8} width={8} alt="Arrow Right Icon"/>
+                                <Image src="/icons/arrows/arrow-right.svg" height={8} width={8} alt="Arrow Right Icon"/>
                             </span>
                         </Link>
                     </div>

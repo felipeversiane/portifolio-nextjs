@@ -23,24 +23,24 @@ type Props = {
   }
 }
 
-const RootLayout:React.FC<Props> =({
+const RootLayout: React.FC<Props> = ({
   children,
-  params: {locale}
+  params: { locale },
 }) => {
   const messages = useMessages();
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/icons/logo-small.svg" />
+        <link rel="icon" href="/icons/brand/logo-small.svg" />
       </head>
-      <body >
+      <body>
         <NextIntlClientProvider messages={messages}>
-          <Header/>
-            {children}
-          <Footer/>
+          <Header />
+          {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
   );
-}
+};
 export default RootLayout;

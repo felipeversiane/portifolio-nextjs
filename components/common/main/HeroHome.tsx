@@ -51,7 +51,7 @@ export default function HeroHome (){
                         <span className="font-medium text-lg mr-2  bg-inherit text-black">
                             {t('download_cv')}
                         </span>
-                        <Image src='icons/download.svg' className=" bg-inherit transition-transform duration-300" height={15} width={15} alt="Download Icon"/>
+                        <Image src='icons/sheet/download.svg' className=" bg-inherit transition-transform duration-300" height={15} width={15} alt="Download Icon"/>
                     </Link> 
                 </div>
 
@@ -59,7 +59,7 @@ export default function HeroHome (){
             <div className="flex items-center w-1/3 max-w-1/3 justify-end">
                 <div className=' absolute z-0 top-60 right-[-40px] h-96 w-96 bg-[#739B79] blur-3xl rounded-full opacity-80'></div>
                     <Image
-                        src='images/carbon-code.svg'
+                        src='images/common/carbon-code.svg'
                         className=" z-30 absolute right-[-50px] top-72"
                         height={150}
                         width={530}
@@ -67,7 +67,7 @@ export default function HeroHome (){
                         alt="Carbon Code Icon"
                     />      
                     <Image
-                        src='images/carbon-code2.svg'
+                        src='images/common/carbon-code2.svg'
                         className="z-20 absolute right-[-60px] top-36"
                         height={100}
                         width={440}

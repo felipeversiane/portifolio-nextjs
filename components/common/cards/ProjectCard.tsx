@@ -39,13 +39,13 @@ export default function ProjectCard({
         <div className="footer flex justify-between w-full items-start">
           <div className=" flex items-start justify-start w-1/2">
             <Link href={deploy} className="flex hover:shadow-md items-baseline  overflow-hidden justify-center rounded-lg bg-white px-4 py-1.5 hover:bg-[#f1f1f1] transition-all duration-300 ">
-              <Image src='icons/arrow-up-right-black.svg' className=" bg-inherit " height={14} width={14} alt="Arrow Up Icon"/>
+              <Image src='icons/arrows/arrow-up-right-black.svg' className=" bg-inherit " height={14} width={14} alt="Arrow Up Icon"/>
               <span className="font-normal text-xl ml-2  bg-inherit text-black">
                 Visit Website
               </span>
             </Link>
             <Link href={github} className="flex items-baseline ml-4 overflow-hidden justify-center rounded-lg bg-[#171717] hover:bg-[#191919] px-4 py-1.5 hover:shadow-md border border-solid border-[#383737] transition-all duration-300 ">
-              <Image src='icons/social-github-bold.svg' className=" bg-inherit " height={16} width={16} alt="Github Icon"/>
+              <Image src='icons/social/social-github-bold.svg' className=" bg-inherit " height={16} width={16} alt="Github Icon"/>
               <span className=" font-normal text-xl ml-2  bg-inherit text-white">
                 Source-Code
               </span>

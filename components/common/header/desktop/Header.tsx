@@ -9,13 +9,13 @@ export function Header (){
   return (
     <header className="flex items-center w-full z-50 justify-between py-4 px-10">
       <Link href='/'> 
-          <Image src='/icons/logo-small.svg' height={30} width={30} alt="Site logo" />
+          <Image src='/icons/brand/logo-small.svg' height={25} width={25} alt="Site logo" />
       </Link>
       <div className="hidden z-50 md:block">
         <Navbar/>
       </div>
       <div className="hidden z-50 md:block">
-        <Menu/>
+        <Lang/>
       </div>
       <div className=" z-50 md:hidden">
         <Menu/>

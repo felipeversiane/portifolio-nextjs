@@ -1,42 +1,27 @@
 import SocialButton from "../buttons/SocialButton";
 
-const buttons: { src: string; alt: string; height: number;width: number;href:string; }[] = [
-    {
-      src: "/icons/social-linkedin.svg",
-      alt: "Linkedin Icon",
-      height: 25,
-      width: 25,
-      href:"",
-    },
-    {
-        src: "/icons/social-instagram.svg",
-        alt: "Instagram Icon",
-        height: 25,
-        width: 25,
-        href:"",
-    },
-    {
-        src: "/icons/social-github.svg",
-        alt: "Github Icon",
-        height: 25,
-        width: 25,
-        href:"",
-    },
-    {
-        src: "/icons/social-spotify.svg",
-        alt: "Spotify Icon",
-        height: 25,
-        width: 25,
-        href:"",
-    },
-    {
-        src: "/icons/social-whatsapp.svg",
-        alt: "Whatsapp Icon",
-        height: 25,
-        width: 25,
-        href:"",
-    },
-  ]
+const buttons: {src:string,href:string}[] = [
+  {
+    src:"/icons/social/social-linkedin.svg",
+    href:"https://www.linkedin.com/in/felipeversiane/",
+  },
+  {
+    src:"/icons/social/social-instagram.svg",
+    href:"https://www.instagram.com/felipeffv_/",
+  },
+  {
+    src:"/icons/social/social-github.svg",
+    href:"https://github.com/felipeversiane",
+  },
+  {
+    src:"/icons/social/social-spotify.svg",
+    href:"https://open.spotify.com/user/iamlipe?si=1ca828be84d24316",
+  },
+  {
+    src:"/icons/social/social-whatsapp.svg",
+    href:"https://w.app/oWNQTn",
+  },
+]
 
 const SocialStack = () => {
   return (
@@ -45,9 +30,6 @@ const SocialStack = () => {
         <SocialButton
           key={index} 
           src={button.src}
-          alt={button.alt}
-          width={button.width}
-          height={button.height}
           href={button.href}
         />
     ))}
